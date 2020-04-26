@@ -1,0 +1,67 @@
+<html>
+<head> <title> Image Gallery </title>
+  <link rel="stylesheet"
+            type="text/css"
+            href="bootstrap.css" />
+  <link rel="stylesheet"
+            type="text/css"
+            href="styles.css" />
+  <script src="jquery-1.11.3.min.js">
+
+  </script>
+
+</head>
+
+<a href="index.html">
+  Home </a>
+  &nbsp;
+<a href="aboutme.html">
+  About </a>
+  &nbsp;
+  <a href="contact.html">
+  Contact </a>
+  &nbsp;
+<hr></hr>
+<body>
+<h1 class="first"> Image Gallery </h1>
+<h2 class="first"> Select an Image to view it </h2>
+<div class="container">
+  <div class="row">
+			<div class="col-md-3">
+				<img class="crop-img"
+				  src="img_6.jpg"
+				  alt="graffittied building"/>
+			</div>
+			<div class="col-md-3">
+				<img class="crop-img"
+				  src="img_7.jpg"
+				  alt="display of cheese"/>
+			</div>
+			<div class="col-md-3">
+				<img class="crop-img"
+				  src="img_8.jpg"
+				  alt="synethesizer workshop"/>
+			</div>
+			<div class="col-md-3">
+				<img class="crop-img"
+				   src="img_9.jpg"
+				   alt="City night"/>
+			</div>
+		</div>
+    <div class="row">
+			<div class="col-md-12">
+				<img id="bigImage"
+				  class="large-img"
+				  src="img_1.jpg"
+				  alt="graffittied building"/>
+			</div>
+		</div>
+  </div>
+
+  <script>
+    $(".crop-img").click(function(){
+      $("#bigImage").attr('src',$(this).attr('src'));
+    });
+  </script>
+  </body>
+  </html>

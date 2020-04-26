@@ -1,0 +1,25 @@
+body{
+  background: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+a{
+  color: white;
+  font-size:
+}
+
+.first{
+  color: white;
+  text-align: center;
+}
+
+.crop-img{
+  max-height:150px;
+  max-width:100%;
+}
+
+/* this is for the big main image */
+.large-img{
+  max-width:100%;
+}
